@@ -28,7 +28,8 @@ a:hover {
   color: blue;
 }
 
-#button {
+#button,
+#currentLocation-button {
   background-color: #87d2cb;
   border: 1px solid #87d2cb;
   border-radius: 20px;
@@ -40,7 +41,8 @@ a:hover {
   text-align: center;
 }
 
-#button:hover {
+#button:hover,
+#currentLocation-button:hover {
   cursor: pointer;
   transition: all 200ms ease-in-out;
   background-color: #78bcb5;

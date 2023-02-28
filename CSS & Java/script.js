@@ -37,7 +37,7 @@ function getGeoLocation(position) {
   axios.get(apiUrl).then(currentWeather);
 }
 
-let getCurrentWeather = document.querySelector("#currentLocation.button");
+let getCurrentWeather = document.querySelector("#currentLocation-button");
 getCurrentWeather.addEventListener("click", currentLocation);
 
 //Current Date and time
