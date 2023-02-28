@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link href="CSS & Java/style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap"
+      rel="stylesheet"
+    />
+    <title>Weather App ☀️</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="change-city-field">
+        <form id="city-form">
+          <input
+            type="search"
+            placeholder="Change City"
+            class="change"
+            id="search-city"
+            autocomplete="off"
+          />
+          <input type="submit" value="Search" id="button" />
+          <input
+            type="button"
+            value="Current Position"
+            id="currentLocation-button"
+          />
+        </form>
+      </div>
+      <div class="container text-center">
+        <div class="row align-items-center main-corp">
+          <div class="col-3 today-emoji">
+            ⛅️
+            <br />
+            <p class="temperature">4°C / 15°C</p>
+          </div>
+          <div class="col-4 city-camp" id="selected-city">Rome</div>
+
+          <div class="col-5 infos">
+            Precipitations: 8%
+            <br />
+            Humidity: 11%
+            <br />
+            Wind: 11 km/h
+          </div>
+          <div class="col-12" id="currentDate">Monday 18:00</div>
+          <div class="col-12 currentDegrees">
+            <span class="degrees">Currently 11 </span>
+            <a href="#" id="celsiusTemp"> °C </a> /
+            <a href="#" id="fahreTemp"> °F </a>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <div class="container text-center">
+        <div class="row align-items-end">
+          <div class="col emoji next-week">
+            ☀️
+            <div class="temperature">Friday <br />2°C/11°C</div>
+          </div>
+          <div class="col emoji next-week">
+            ☀️
+            <div class="temperature">Saturday <br />0°C/10°C</div>
+          </div>
+          <div class="col emoji next-week">
+            ☁️
+            <div class="temperature">Sunday <br />-2°C/9°C</div>
+          </div>
+          <div class="col emoji next-week">
+            ⛈️
+            <div class="temperature">Monday <br />2°C/12°C</div>
+          </div>
+          <div class="col emoji next-week">
+            ⛈️
+            <div class="temperature">
+              Friday
+              <br />2°C/12°C
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="CSS & Java/script.js"></script>
+  </body>
+</html>
