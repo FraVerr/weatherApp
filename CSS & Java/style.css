@@ -121,5 +121,11 @@ a:hover {
 
 .informations {
   text-align: center;
-  font-size: 12px;
+  font-size: 14px;
+}
+
+.gitHub,
+.netlify {
+  text-decoration: underline;
+  color: gray;
 }
