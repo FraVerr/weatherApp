@@ -118,3 +118,8 @@ a:hover {
 .currentDegrees {
   text-align: left;
 }
+
+.informations {
+  text-align: center;
+  font-size: 12px;
+}
