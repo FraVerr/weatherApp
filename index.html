@@ -29,7 +29,7 @@
             type="search"
             placeholder="Change City"
             class="change"
-            id="search-city"
+            id="search-input"
             autocomplete="off"
           />
           <input type="submit" value="Search" id="button" />
@@ -42,23 +42,22 @@
       </div>
       <div class="container text-center">
         <div class="row align-items-center main-corp">
-          <div class="col-3 today-emoji">
-            ⛅️
-            <br />
-            <p class="temperature">4°C / 15°C</p>
+          <div class="col-3">
+            <img src="" alt="clear" id="today-emoji" />
           </div>
-          <div class="col-4 city-camp" id="selected-city">Rome</div>
+          <div class="col-4 city-camp" id="city">Rome</div>
 
           <div class="col-5 infos">
-            Precipitations: 8%
             <br />
-            Humidity: 11%
+            <span id="description"></span>
             <br />
-            Wind: 11 km/h
+            Humidity: <span id="humidity"></span> %
+            <br />
+            Wind: <span id="wind"></span> Km/h
           </div>
           <div class="col-12" id="currentDate">Monday 18:00</div>
           <div class="col-12 currentDegrees">
-            <span class="degrees">Currently 11 </span>
+            Currently <span class="degrees" id="current-temp">11 </span>
             <a href="#" id="celsiusTemp"> °C </a> /
             <a href="#" id="fahreTemp"> °F </a>
           </div>
@@ -67,24 +66,44 @@
       <hr />
       <div class="container text-center">
         <div class="row align-items-end">
-          <div class="col emoji next-week">
-            ☀️
+          <div class="col week">
+            <img
+              src="http://openweathermap.org/img/wn/11n@2x.png"
+              alt="thunder"
+              id="icon-next"
+            />
             <div class="temperature">Friday <br />2°C/11°C</div>
           </div>
-          <div class="col emoji next-week">
-            ☀️
+          <div class="col week">
+            <img
+              src="http://openweathermap.org/img/wn/03d@2x.png"
+              alt="cloud"
+              id="icon-next"
+            />
             <div class="temperature">Saturday <br />0°C/10°C</div>
           </div>
-          <div class="col emoji next-week">
-            ☁️
+          <div class="col week">
+            <img
+              src="http://openweathermap.org/img/wn/01d@2x.png"
+              alt="sunny"
+              id="icon-next"
+            />
             <div class="temperature">Sunday <br />-2°C/9°C</div>
           </div>
-          <div class="col emoji next-week">
-            ⛈️
+          <div class="col week">
+            <img
+              src="http://openweathermap.org/img/wn/10d@2x.png"
+              alt="rain"
+              id="icon-next"
+            />
             <div class="temperature">Monday <br />2°C/12°C</div>
           </div>
-          <div class="col emoji next-week">
-            ⛈️
+          <div class="col week">
+            <img
+              src="http://openweathermap.org/img/wn/10d@2x.png"
+              alt="rain"
+              id="icon-next"
+            />
             <div class="temperature">
               Friday
               <br />2°C/12°C

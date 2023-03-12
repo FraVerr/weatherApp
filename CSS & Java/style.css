@@ -1,9 +1,9 @@
 body {
-  background: rgb(186, 237, 238);
+  background: rgb(236, 110, 69);
   background: radial-gradient(
     circle,
-    rgba(186, 237, 238, 1) 0%,
-    rgba(255, 255, 255, 1) 100%
+    rgba(236, 110, 69, 0.5662858893557423) 0%,
+    rgba(236, 110, 69, 0.15172006302521013) 74%
   );
   font-family: "Quicksand", sans-serif;
 }
@@ -24,14 +24,14 @@ a {
 }
 
 a:hover {
-  text-decoration: underline;
-  color: blue;
+  text-decoration: none;
+  color: black;
 }
 
 #button,
 #currentLocation-button {
-  background-color: #87d2cb;
-  border: 1px solid #87d2cb;
+  background-color: #f5b09a;
+  border: 1px solid #f5b09a;
   border-radius: 20px;
   color: white;
   box-shadow: 0px 0px 1px gray;
@@ -45,7 +45,7 @@ a:hover {
 #currentLocation-button:hover {
   cursor: pointer;
   transition: all 200ms ease-in-out;
-  background-color: #78bcb5;
+  background-color: rgba(203, 96, 61, 31);
 }
 
 .container {
@@ -58,7 +58,7 @@ a:hover {
   width: 60%;
 }
 .main-corp {
-  box-shadow: 1px 1px 8px #b9cece;
+  box-shadow: 1px 1px 8px #f5b09a;
   border-radius: 20px;
   border: 1px;
 }
@@ -93,22 +93,27 @@ a:hover {
   font-size: 18px;
 }
 
+#description::first-letter {
+  text-transform: capitalize;
+}
+
 .temperature {
   font-size: 15px;
 }
 
-.next-week {
-  border: 1px solid rgba(135, 210, 203, 0.1);
+.week {
+  border: 1px;
   border-radius: 20px;
   margin: 10px 7px auto;
   padding: 10px;
   transition: all 200ms ease-in-out;
-  box-shadow: 1px 1px 8px #87d2cb;
+  box-shadow: 1px 1px 8px #f5b09a;
   display: block;
+  background-color: white;
 }
-.next-week:hover {
+.week:hover {
   transform: scale(1.3);
-  box-shadow: 1px 1px 8px #87d2cb;
+  box-shadow: 1px 1px 8px #f5b09a;
 }
 
 #currentDate {
@@ -128,4 +133,8 @@ a:hover {
 .netlify {
   text-decoration: underline;
   color: gray;
+}
+
+#icon-next {
+  max-width: 50px;
 }
