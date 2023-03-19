@@ -1,6 +1,38 @@
+//Current Date and time
+let date = new Date();
+let days = date.getDay();
+let currentDay = [
+  "Sunday",
+  "Monday",
+  "Tuesday",
+  "Wednesday",
+  "Thursday",
+  "Friday",
+  "Saturday",
+];
+let day = currentDay[days];
+let hour = date.getHours();
+let minutes = date.getMinutes();
+if (hour < 10) {
+  hour = `0${hour}`;
+}
+if (minutes < 10) {
+  minutes = `0${minutes}`;
+}
+
+let changeDayHours = document.querySelector("#currentDate");
+changeDayHours.innerHTML = `${day} ${hour}:${minutes}`;
+
+//Forecast
+function getForecast(coordinates) {
+  let apiKey = "bf54175800a55e59e6c4d6461deeef12";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=metric`;
+  console.log(apiUrl);
+  axios.get(apiUrl).then(displayForecast);
+}
+
 // Search Engine
 function displayTemperature(response) {
-  console.log(response.data);
   let cityElement = document.querySelector("#city");
   let temperatureElement = document.querySelector("#current-temp");
   let windElement = document.querySelector("#wind");
@@ -60,7 +92,7 @@ fahrenheitLink.addEventListener("click", showFahrenheit);
 let celsiusLink = document.querySelector("#celsiusTemp");
 celsiusLink.addEventListener("click", showCelsius);
 
-search("Rome");
+search("Milan");
 
 //Current Location
 function currentLocation(event) {
@@ -78,22 +110,3 @@ function getGeoLocation(position) {
 
 let getCurrentWeather = document.querySelector("#currentLocation-button");
 getCurrentWeather.addEventListener("click", currentLocation);
-
-//Current Date and time
-let date = new Date();
-let days = date.getDay();
-let currentDay = [
-  "Sunday",
-  "Monday",
-  "Tuesday",
-  "Wednesday",
-  "Thursday",
-  "Friday",
-  "Saturday",
-];
-let day = currentDay[days];
-let hour = date.getHours();
-let minutes = date.getMinutes();
-
-let changeDayHours = document.querySelector("#currentDate");
-changeDayHours.innerHTML = `${day} ${hour}:${minutes}`;
