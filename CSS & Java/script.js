@@ -144,8 +144,6 @@ celsiusLink.addEventListener("click", showCelsius);
 
 search("Milan");
 
-displayForecast();
-
 //Current Location
 function currentLocation(event) {
   event.preventDefault();
