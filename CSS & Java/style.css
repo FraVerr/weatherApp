@@ -101,19 +101,11 @@ a:hover {
   font-size: 15px;
 }
 
-.week {
-  border: 1px;
-  border-radius: 20px;
-  margin: 10px 7px auto;
-  padding: 10px;
-  transition: all 200ms ease-in-out;
-  box-shadow: 1px 1px 8px #f5b09a;
-  display: block;
+.weather-forecast {
+  margin: 10px auto;
+  padding: 20px;
   background-color: white;
-}
-.week:hover {
-  transform: scale(1.3);
-  box-shadow: 1px 1px 8px #f5b09a;
+  display: block;
 }
 
 #currentDate {
@@ -133,8 +125,4 @@ a:hover {
 .netlify {
   text-decoration: underline;
   color: gray;
-}
-
-#icon-next {
-  max-width: 50px;
 }
